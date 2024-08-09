@@ -1,0 +1,62 @@
+PS C:\Users\81904\OneDrive\デスクトップ\test\samurai-terakoya> cd C:\Users\81904\OneDrive\デスクトップ\test
+PS C:\Users\81904\OneDrive\デスクトップ\test> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\81904\OneDrive\デスクトップ\test
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/08/08     21:10                git_challenge
+
+
+PS C:\Users\81904\OneDrive\デスクトップ\test> cd C:\Users\81904\OneDrive\デスクトップ\test\git_challenge
+PS C:\Users\81904\OneDrive\デスクトップ\test\git_challenge> git init
+Initialized empty Git repository in C:/Users/81904/OneDrive/デスクトップ/test/git_challenge/.git/
+PS C:\Users\81904\OneDrive\デスクトップ\test\git_challenge> git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello_world.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\81904\OneDrive\デスクトップ\test\git_challenge> git add hello_world.txt
+PS C:\Users\81904\OneDrive\デスクトップ\test\git_challenge> git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello_world.txt
+
+PS C:\Users\81904\OneDrive\デスクトップ\test\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) a8421af] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\81904\OneDrive\デスクトップ\test\git_challenge> git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\81904\OneDrive\デスクトップ\test\git_challenge> git add heiio_world.txt
+fatal: pathspec 'heiio_world.txt' did not match any files
+PS C:\Users\81904\OneDrive\デスクトップ\test\git_challenge> git add hello_world.txt
+PS C:\Users\81904\OneDrive\デスクトップ\test\git_challenge> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello_world.txt
+
+PS C:\Users\81904\OneDrive\デスクトップ\test\git_challenge> git commit -m "日本語訳を追記"
+[main 7543df7] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\81904\OneDrive\デスクトップ\test\git_challenge> git log --oneline
+7543df7 (HEAD -> main) 日本語訳を追記
+a8421af hello_world.txtを追加
